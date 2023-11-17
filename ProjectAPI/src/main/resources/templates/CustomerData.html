@@ -1,0 +1,71 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<script th:src="@{/JS/script.js}" type="text/javascript"> </script>
+    <meta charset="ISO-8859-1">
+    <title>Customer</title>
+    <style>
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #container
+        {
+            width: 20vw;
+            height: 50vh;
+            margin-top: 25vh;
+        }
+        form
+        {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 1px dotted black;
+            position: relative;
+        }
+        input[type="text"]
+        {
+            width: 80%;
+            height: 40px;
+
+        }
+        button
+        {
+            width: 50%;
+            height: 50px;
+            background-color:  rgb(76, 168, 255);
+            border: none;
+            outline: none;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+	
+	<div id="container">
+        <form action="addCustomer" method="post" >
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="Email">
+            <input type="text" name="contact" placeholder="Contact">
+            <input type="text" name="password" placeholder="Choose a Password">
+            <input type="radio" name="role" value="ROLE_USER" id="gendermale" checked>
+            <div class="radiodata">
+                <label for="">Gender : </label>
+                <input type="radio" name="gender" value="male" id="gendermale" checked>
+                <label for="gendermale">Male</label>
+                <input type="radio" name="gender" value="female" id="genderfemale">
+                <label for="genderfemale">Female</label>
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+</body>
+</html>

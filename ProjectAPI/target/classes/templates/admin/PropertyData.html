@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Customer</title>
+    <style>
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        #custform
+        {
+            width: 300px;
+            height: fit-content;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 5%;
+        }
+        #custform input[type="text"]
+        {
+            width: 70%;
+            height: 40px;
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+        .radiodata
+        {
+            width: 70%;
+            height: 40px;
+            align-items: center;
+            /* border: 1px solid black; */
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+        button
+        {
+			width: 50%;
+			height: 40px;
+			margin-left: 25%;
+			margin-top:20px;
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+    <form action="/admin/addProperty" method="post" id="custform">
+        <input type="text" name="pname" id="pname" placeholder="Property Title">
+        <input type="text" name="builder_name"  placeholder="Builder">
+         <input type="text" name="Location"  placeholder="Location">
+          <input type="text" name="area"  placeholder="Carpet Area">
+           <input type="text" name="price"  placeholder="Price">
+    
+    
+    <button>Submit</button>
+    </form>
+</body>
+</html>
