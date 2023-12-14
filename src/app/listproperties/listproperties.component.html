@@ -1,0 +1,24 @@
+<div id="container">
+    <div id="propcontainer">
+        <div class="item1">This is property list</div>
+       
+        <div *ngFor="let prop of property" class="property" >
+            <div class="photo"></div>
+            <div class="details">
+                <a id="Pname">{{prop.name}}</a>
+                <a id="bname">{{prop.builder}}</a>
+                <a id="location">{{prop.location}}</a>
+                <a id="area">{{prop.area}}</a>
+                <hr>
+                <a id="price">{{prop.price}} </a>
+            </div>
+        </div>
+        <!-- <div class="property">A</div>
+        <div class="property">A</div>
+        <div class="property">A</div>
+        <div class="property">A</div>
+        <div class="property">A</div>
+        <div class="property">A</div>
+        <div class="property">A</div> -->
+    </div>
+</div>

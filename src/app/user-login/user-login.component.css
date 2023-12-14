@@ -1,0 +1,67 @@
+#container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#addcustform
+{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 10px 1px rgb(205, 205, 205);
+
+}
+#addcustform input[type="text"]
+{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    background-color: rgb(228, 228, 228);
+    text-align: center;
+}
+#genderchoice
+{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    font: 20px;
+    justify-content: space-evenly;
+}
+
+input[type="radio"]
+{
+    width: 17px;
+    height: 17px;
+}
+#genderchoice div
+{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0px 15px 0px ;
+}
+button
+{
+    width: 50%;
+    height: 50px;
+    margin: 15px 0px 15px 0px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 80, 130);
+    font-size: 20px;
+    color: white;
+}

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+body
+{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    /* background-image: url(assets/images/back.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#container
+{
+    width: 95vw;
+    height: auto;
+    /* background-color: rgb(220, 221, 221); */
+    position: absolute;
+    top: 140px;
+    left: 2.5vw;
+}

@@ -1,0 +1,17 @@
+<div id="container">
+
+    <form id="addcustform" (ngSubmit)="onSubmit()">
+        <h2>Login</h2>
+        <input type="text" name="username" [(ngModel)]="cred.email" placeholder="Username">
+        <input type="text" name="password" [(ngModel)]="cred.password" placeholder="Password">
+        
+
+        <button type="submit">Submit</button>
+
+
+        <div>
+            {{cred | json}}
+        </div>
+
+    </form>
+</div>
